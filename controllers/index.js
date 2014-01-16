@@ -1,11 +1,13 @@
 /**
  * Created by chriswillingham on 1/15/14.
  */
-exports.root = '/admin';
+exports.root = '';
 exports.routes = {
-  'get test': main
+  'get': main
 }
 
 function main(req, res){
+  console.log(TestModel);
   res.send('hello world');
+
 }
